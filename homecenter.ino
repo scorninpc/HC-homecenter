@@ -1,6 +1,5 @@
 #include <Wire.h>
 #include <RealTimeClockDS1307.h>
-#include <LiquidCrystal.h>
 
 #include "config.h"
 
@@ -8,10 +7,6 @@
 #include "HC_Aquario.h"
 
 HC_Aquario hc_Aquario;
-LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
-
-// Formato do timestamp
-char formatted[] = "00-00-00 00:00:00x";
 
 /**
  * Configura a aplicação

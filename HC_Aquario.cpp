@@ -42,12 +42,14 @@ void HC_Aquario::Iluminacao(int Hours, int Minutes)
 		// Liga a luz
 		HC_Aquario::startIlumination();
 		
+		// Debug
 		debug(storePrintf("LIGADO\t%d\t%d\t%d", formatedTime, Hours, Minutes));
 	}
 	else {
 		// Desliga a luz
 		HC_Aquario::stopIlumination();
 		
+		// Debug
 		debug(storePrintf("APAGADO\t%d\t%d\t%d", formatedTime, Hours, Minutes));
 	}
 }
